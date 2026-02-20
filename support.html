@@ -70,6 +70,19 @@
             font-size: 0.9rem;
         }
         .nav a { margin-right: 1.25rem; }
+        .nav a.active { font-weight: 700; text-decoration: underline; }
+        details {
+            margin-bottom: 0.75rem;
+        }
+        summary {
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            margin-bottom: 0.5rem;
+        }
+        details p {
+            margin-top: 0.25rem;
+        }
     </style>
 </head>
 <body>
@@ -77,7 +90,7 @@
         <a href="/">Home</a>
         <a href="/privacy">Privacy</a>
         <a href="/terms">Terms</a>
-        <a href="/support">Support</a>
+        <a href="/support" class="active">Support</a>
     </div>
 
     <h1>Support</h1>
@@ -88,20 +101,30 @@
 
     <h2>Frequently Asked Questions</h2>
 
-    <p><strong>Is my data private?</strong></p>
-    <p>Yes. Your profile, saved items, and search history are stored locally on your device. We don't create user accounts and don't track you personally. If you opt into anonymous data sharing, we collect quality metrics about AI results (including your search query text) to improve the App — but this data contains no personal identifiers and you can opt out at any time. See our <a href="/privacy">Privacy Policy</a> for full details.</p>
+    <details>
+        <summary>Is my data private?</summary>
+        <p>Yes. Your profile, saved items, and search history are stored locally on your device. We don't create user accounts and don't track you personally. If you opt into anonymous data sharing, we collect quality metrics about AI results (including your search query text) to improve the App — but this data contains no personal identifiers and you can opt out at any time. See our <a href="/privacy">Privacy Policy</a> for full details.</p>
+    </details>
 
-    <p><strong>Are the quotes accurate?</strong></p>
-    <p>Invoke Wisdom uses AI to find and present wisdom. While we optimize for accuracy, AI-generated content may contain errors or misattributions. We recommend verifying quotes before using them in formal or published contexts. Further, there is a "Report an Issue" menu option on our detail page to report an errors you encounter. These reports are logged and used going forward to improve overall results for everyone. </p>
+    <details>
+        <summary>Are the quotes accurate?</summary>
+        <p>Invoke Wisdom uses AI to find and present wisdom. While we optimize for accuracy, AI-generated content may contain errors or misattributions. We recommend verifying quotes before using them in formal or published contexts. Further, there is a "Report an Issue" menu option on our detail page to report any errors you encounter. These reports are logged and used going forward to improve overall results for everyone.</p>
+    </details>
 
-    <p><strong>How do I delete my data?</strong></p>
-    <p>Go to Settings in the App and tap "Delete All My Data." This removes all your saved items, profile information, and search history. Uninstalling the App also removes all local data.</p>
+    <details>
+        <summary>How do I delete my data?</summary>
+        <p>Go to Settings in the App and tap "Delete All My Data." This removes all your saved items, profile information, and search history. Uninstalling the App also removes all local data.</p>
+    </details>
 
-    <p><strong>Why am I seeing a search limit?</strong></p>
-    <p>Invoke Wisdom includes a daily search limit to manage costs and ensure service quality. The limit resets each day.</p>
+    <details>
+        <summary>Why am I seeing a search limit?</summary>
+        <p>Invoke Wisdom includes a daily search limit to manage costs and ensure service quality. The limit resets each day.</p>
+    </details>
 
-    <p><strong>How do I share feedback or feature ideas?</strong></p>
-    <p>Use the "Shape Invoke" section in Settings to vote on upcoming features, or email us directly at <a href="mailto:support@invokewisdom.app">support@invokewisdom.app</a>.</p>
+    <details>
+        <summary>How do I share feedback or feature ideas?</summary>
+        <p>Use the "Shape Invoke" section in Settings to vote on upcoming features, or email us directly at <a href="mailto:support@invokewisdom.app">support@invokewisdom.app</a>.</p>
+    </details>
 
     <div class="footer">
         <p>&copy; 2026 Invoke Wisdom. All rights reserved.</p>
